@@ -10,7 +10,6 @@ To use this program, you must have an account with OpenSky as well as access to 
 Also, this program uses MATLAB to visualize the state vector data. The program does not require MATLAB to be installed on you computer, but
 the simulation aspect of the program will not work. The visualization part uses the [Mapping Toolbox](https://www.mathworks.com/help/map/), [Database Toolbox](https://www.mathworks.com/help/database/), and the [Image Processing Toolbox](https://www.mathworks.com/help/images/).
 
-### Launching the Program
 This project has only been testing on Windows 10.
 To run this program, you will need to download the ADSBDataCollector.jar file as well as the database and resources folders into the same directory. 
 This project uses java jdk 21 and MATLAB R2024a. <path_to_java>\java\jdk-21\bin and <path_to_matlab>\MATLAB\R2024\bin\win64 must be added to the system path.
