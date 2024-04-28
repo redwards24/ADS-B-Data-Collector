@@ -21,7 +21,7 @@ The resources folder contains two images of airplanes. The image called Airplane
 More specifically, the image is from [Airplane Tracking Using ADS-B Signals](https://www.mathworks.com/help/comm/usrpradio/ug/airplane-tracking-using-ads-b-signals-2.html);
 The other image is an edited version of AirplaneN.png.
 
-The 
+The src folder contains the source code for this project.
 
 ## External Libraries
 This project uses [SQLite](https://www.sqlite.org/) for local database storage.
