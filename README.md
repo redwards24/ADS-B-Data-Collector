@@ -7,3 +7,5 @@ To use this program, you must have an account with OpenSky as well as access to 
 
 Also, this program uses MATLAB to visualize the state vector data. The program does not require MATLAB to be installed on you computer, but
 the simulation aspect of the program will not work.
+
+To run this program, you will need to download the ADSBDataCollector.jar file as well as the database and resource folders into the same directory.
