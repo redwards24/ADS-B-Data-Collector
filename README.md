@@ -8,7 +8,7 @@ This java program is a graphical interface to querying and processing state vect
 To use this program, you must have an account with OpenSky as well as access to their [historical database](https://opensky-network.org/data/historical-flight-data).
 
 Also, this program uses MATLAB to visualize the state vector data. The program does not require MATLAB to be installed on you computer, but
-the simulation aspect of the program will not work.
+the simulation aspect of the program will not work. The visualization part uses the [Mapping Toolbox](https://www.mathworks.com/help/map/), [Database Toolbox](https://www.mathworks.com/help/database/), and the [Image Processing Toolbox]([https://www.mathworks.com/products/image-processing.html](https://www.mathworks.com/help/images/)).
 
 To run this program, you will need to download the ADSBDataCollector.jar file as well as the database and resources folders into the same directory.
 
