@@ -12,7 +12,16 @@ the simulation aspect of the program will not work.
 
 To run this program, you will need to download the ADSBDataCollector.jar file as well as the database and resources folders into the same directory.
 
+### Content
+The database folder contains LocalDB.db which is used to store program information as well as state vectors.
 
+The jars folder contains the external libraries used in this project.
+
+The resources folder contains two images of airplanes. The image called AirplaneN.png is from MATLAB's [Communications Toolbox](https://www.mathworks.com/products/communications.html).
+More specifically, the image is from [Airplane Tracking Using ADS-B Signals](https://www.mathworks.com/help/comm/usrpradio/ug/airplane-tracking-using-ads-b-signals-2.html);
+The other image is an edited version of AirplaneN.png.
+
+The 
 
 ## External Libraries
 This project uses [SQLite](https://www.sqlite.org/) for local database storage.
