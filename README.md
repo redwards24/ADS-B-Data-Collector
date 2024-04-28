@@ -10,14 +10,14 @@ To use this program, you must have an account with OpenSky as well as access to 
 Also, this program uses MATLAB to visualize the state vector data. The program does not require MATLAB to be installed on you computer, but
 the simulation aspect of the program will not work. The visualization part uses the [Mapping Toolbox](https://www.mathworks.com/help/map/), [Database Toolbox](https://www.mathworks.com/help/database/), and the [Image Processing Toolbox](https://www.mathworks.com/help/images/).
 
-To run this program, you will need to download the ADSBDataCollector.jar file as well as the database and resources folders into the same directory.
+To run this program, you will need to download the ADSBDataCollector.jar file as well as the database and resources folders into the same directory. Also, 
 
 ### Content
 The database folder contains LocalDB.db which is used to store program information as well as state vectors.
 
 The jars folder contains the external libraries used in this project.
 
-The resources folder contains two images of airplanes. The image called AirplaneN.png is from MATLAB's [Communications Toolbox](https://www.mathworks.com/products/communications.html).
+The resources folder contains two images of airplanes. The image called AirplaneN.png is from MATLAB's [Communications Toolbox](https://www.mathworks.com/help/comm/).
 More specifically, the image is from [Airplane Tracking Using ADS-B Signals](https://www.mathworks.com/help/comm/usrpradio/ug/airplane-tracking-using-ads-b-signals-2.html);
 The other image is an edited version of AirplaneN.png.
 
