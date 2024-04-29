@@ -16,8 +16,8 @@ This project uses java jdk 21 and MATLAB R2024a. <path_to_java>\java\jdk-21\bin 
 
 ## Use Cases
 This program has two main functionalites: 
-  (1) Colleting and Processing state vector data
-  (2) Plotting and Animating state vector data
+1. Colleting and Processing state vector data
+2.  Plotting and Animating state vector data
 
 ### Collecting and Processing
 The typical use case for collecting and processing is as follows:
