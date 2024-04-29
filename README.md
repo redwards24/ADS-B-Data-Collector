@@ -38,8 +38,8 @@ The typical use case for collecting and processing is as follows:
    - Currently, the filters available are:
      * Date and Time - limit the range of time of the data set
      * Boundary - limit the latitude and longitude limits of the data set
-        i. Box - select a north, south, east, and west limit
-        ii. Center Point - select a center point, such as O'Hare International Airport, and define a radius, unit, and shape to calculate a boundary
+        - Box - select a north, south, east, and west limit
+        - Center Point - select a center point, such as O'Hare International Airport, and define a radius, unit, and shape to calculate a boundary
      * Nulls - select columns to remove null values from, rows with null values in the specified columns will be removed
      * Duplicates - select columns to remove duplicates rows, for example, if columns lat and lon are selected, then no two rows will have the same lat and lon values, but two rows may have the same lat or lon value
      * Expired - remove rows based on lastcontact or lastposupdate values
