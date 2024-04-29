@@ -88,7 +88,6 @@ The typical use case for ploting and animating is as follows:
    - When animating, the MATLAB figure should be fine tuned to fit every image with the figure frame. There is a button to open the figure that will show what will be animated.
   
 4. Plot or Animate
-   - Currently, selecting a destination for the plot or video still needs work (just haven't felt like doing it). The output will be in the same directory of the program.
 
 
 
