@@ -25,25 +25,25 @@ The typical use case for collecting and processing is as follows:
 1. Select a source of data.
    - The source can be:
      * The OpenSky Network
-     b. The Local Database
-     c. A CSV file (note: validation of file content has not been implemented, however the program should not crash and only show an error message if an invalid file is used)
+     * The Local Database
+     * A CSV file (note: validation of file content has not been implemented, however the program should not crash and only show an error message if an invalid file is used)
    - To combine data sets, simply add more than one source to the list of sources
      
 2. Select a destination for the data.
    - The destination can be:
-     a. The Local Database
-     b. A CSV file
+     * The Local Database
+     * A CSV file
 
 3. Select filters
    - Currently, the filters available are:
-     a. Date and Time - limit the range of time of the data set
-     b. Boundary - limit the latitude and longitude limits of the data set
+     * Date and Time - limit the range of time of the data set
+     * Boundary - limit the latitude and longitude limits of the data set
         i. Box - select a north, south, east, and west limit
         ii. Center Point - select a center point, such as O'Hare International Airport, and define a radius, unit, and shape to calculate a boundary
-     c. Nulls - select columns to remove null values from, rows with null values in the specified columns will be removed
-     d. Duplicates - select columns to remove duplicates rows, for example, if columns lat and lon are selected, then no two rows will have the same lat and lon values, but two rows may have the same lat or lon value
-     e. Expired - remove rows based on lastcontact or lastposupdate values
-     f. Airlines - remove rows whose callsign does not belong to the selected airlines
+     * Nulls - select columns to remove null values from, rows with null values in the specified columns will be removed
+     * Duplicates - select columns to remove duplicates rows, for example, if columns lat and lon are selected, then no two rows will have the same lat and lon values, but two rows may have the same lat or lon value
+     * Expired - remove rows based on lastcontact or lastposupdate values
+     * Airlines - remove rows whose callsign does not belong to the selected airlines
    - If OpenSky is selected as a source, then filters can either be added to a query, which will be used to query OpenSky's database, or filters can be add to local processing, which means the filters will be applied using java methods
    - When querying OpenSky, you should at least have a Date and Time filter as well as a Boundary filter
   
