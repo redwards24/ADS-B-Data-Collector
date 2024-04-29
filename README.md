@@ -14,6 +14,8 @@ This project has only been tested on Windows 10.
 To run this program, you will need to download the ADSBDataCollector.jar file as well as the database and resources folders into the same directory. 
 This project uses java jdk 21 and MATLAB R2024a. <path_to_java>\java\jdk-21\bin and <path_to_matlab>\MATLAB\R2024\bin\win64 must be added to the system path.
 
+
+
 ## Use Cases
 This program has two main functionalites: 
 1. Colleting and Processing state vector data
@@ -46,6 +48,7 @@ The typical use case for collecting and processing is as follows:
      * Airlines - remove rows whose callsign does not belong to the selected airlines
    - If OpenSky is selected as a source, then filters can either be added to a query, which will be used to query OpenSky's database, or filters can be add to local processing, which means the filters will be applied using java methods
    - When querying OpenSky, you should at least have a Date and Time filter as well as a Boundary filter
+   - To move data, do not select any filters
   
 4. Start the process
    - If OpenSky is selected as a source, then you will be asked to enter your Trino/OpenSky username. After that you will be directed to the Trino login page. Once you have logged in and have been authenticated,
@@ -53,6 +56,41 @@ The typical use case for collecting and processing is as follows:
    - If the process succesfully finished then you will get a message saying so. Otherwise, you will get an error message and can look at the log to determine what went wrong.
      i. The log is still being updated to give more debugging info
    - If the local database is chosen as the destination, then you will have to restart the program to see it show up as a selectable source. This should be fixed in the future.
+
+
+### Plotting and Animating
+The typical use case for ploting and animating is as follows:
+
+1. Select a source of data.
+   - The source can be:
+     * The Local Database
+     * A CSV file 
+   - Currently, plotting and animating using a file as the source may not work every time. I would recommend storing data in the database, as it seems to work every time
+  
+2. Select flights to plot or animate.
+   - Click on the source and then press the "Select Flights" button. A dialog will pop up for you to select from the flights in the source.
+  
+3. Configure settings
+   - GeoPlot:
+     * Line Style - the appearance of the line that connects points, can be none
+     * Marker - the appearance of the marker used to mark points, can be none
+     * Color - the color of the line and marker
+   - Animate:
+     * Basemap Zoom - determines the level of zoom of the basemap when MATLAB downloads it
+     * Raster Width - determines the width of the basemap when MATLAB downloads it
+     * Raster Height - determines the height of the basemap when MATLAB downloads it
+     * Plane Scale - determines how MATLAB should resize the plane image
+     * Figure Zoom - determines the level of zoom of the MATLAB figure
+     * Resolution(dpi) - determines the dpi of the MATLAB figure if the figure saved (not the video)
+     * Latitude Offset - fine tune the center point of the MATLAB figure
+     * Longitude Offset - fine tune the center point of the MATLAB figure
+     * Time Interval - determines how often a plane should be plotted, if set to 10, then a plane will be plotted every 10 seconds
+   - When animating, the MATLAB figure should be fine tuned to fit every image with the figure frame. There is a button to open the figure that will show what will be animated.
+  
+4. Plot or Animate
+   - Currently, selecting a destination for the plot or video still needs work (just haven't felt like doing it). The output will be in the same directory of the program.
+
+
 
 ## Folder Content
 The database folder contains LocalDB.db which is used to store program information as well as state vectors.
