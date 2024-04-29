@@ -24,7 +24,7 @@ The typical use case for collecting and processing is as follows:
 
 1. Select a source of data.
    - The source can be:
-     a. The OpenSky Network
+     * The OpenSky Network
      b. The Local Database
      c. A CSV file (note: validation of file content has not been implemented, however the program should not crash and only show an error message if an invalid file is used)
    - To combine data sets, simply add more than one source to the list of sources
